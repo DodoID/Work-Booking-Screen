@@ -1,0 +1,36 @@
+/* Set the font family and size for the entire body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  /* Style for text areas */
+  textarea {
+    background: transparent; /* Make the background transparent */
+    border: none; /* Remove border */
+    resize: none; /* Disable text area resizing */
+    color: #000000; /* Text color */
+    border-left: 1px solid black; /* Add a left border */
+    padding: 10px; /* Padding around text */
+    
+  }
+  
+  .container {
+    background-color: #f5f5f5; /* Light gray background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin-top: 20px; /* Add some space at the top */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    border: #bd06d5 2px solid; /* Add a border */
+  }
+  
+  .display-3{
+    font-size: 120px;
+    font-weight: bolder;
+    color: #bd06d5;
+    text-decoration: underline;
+    text-decoration-color: #3b0542;
+  }
+  
