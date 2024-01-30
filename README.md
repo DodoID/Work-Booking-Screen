@@ -14,7 +14,7 @@ License
 ## Project Description
 This project is a workday scheduler that allows the user to add tasks to a workday schedule split by hours. The user can also save their schedule to local storage so that they can access it later.
 
-## Link to Deployed Application:
+## Link to Deployed Application: https://dodoid.github.io/Work-Booking-Screen/ 
 
 ## Overview
 This project uses jQuery to dynamically create the workday schedule and local storage to save the user's schedule. The user can also delete tasks from the schedule.
