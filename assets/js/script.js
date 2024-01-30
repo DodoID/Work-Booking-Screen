@@ -20,3 +20,49 @@ $(document).ready(function() {
     
     // For retrieving user tasks from local storage or initialize an empty array
       const tasksList = JSON.parse(localStorage.getItem("userTasks")) || [];
+
+       
+      // Loop through the working hours and create time blocks
+      hours.forEach((hour, index) => {
+        const timeblockRow = $("<div>").addClass("row");
+        const hourSlot = $("<div>").addClass("hour col-1").text(hour);
+        const userTask = $("<textarea>")
+          .addClass("description col")
+          .attr("data-index", index + 9)
+          .text(tasksList[index]?.taskText || ""); // Populate with existing task text
+        const saveTask = $("<button><i>")
+          .addClass("saveBtn col-1 fas fa-save fa-2x")
+          .css("color", "#ffffff");
+  
+        // Append the elements to the timeblock row and to the container
+        timeblockRow.append(hourSlot, userTask, saveTask);
+        $(".container").append(timeblockRow);
+      });
+    }
+  
+    // Call the function to create time blocks
+    createHourBlocks(workingDayHours);
+
+    
+    // Highlight past, present, and future hours
+    function highlightHours() {
+        const currentHourInt = parseInt(currentDateTime.format("HH"));
+    
+        // Loop through all descriptions and apply appropriate CSS classes
+        $(".description").each(function() {
+          const hourInt = parseInt($(this).attr("data-index"));
+          if (hourInt < currentHourInt) $(this).addClass("past");
+          else if (hourInt === currentHourInt) $(this).addClass("present");
+          else $(this).addClass("future");
+        });
+      }
+    
+      // Call the function to highlight hours
+      highlightHours();
+    
+      // Save user task entries when save button is clicked
+      $(".saveBtn").click(function() {
+        const textarea = $(this).closest(".row").find("textarea");
+        const taskTime = parseInt(textarea.attr("data-index"));
+        const taskText = textarea.val().trim();
+    

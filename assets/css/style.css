@@ -48,3 +48,57 @@ header {
   .description {
     white-space: pre-wrap; /* Preserve line breaks and wrap text */
   }
+
+  /* Styling for elements with class 'time-block' */
+.time-block {
+    text-align: center; /* Center-align text */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  /* Styling for elements with class 'row' */
+  .row {
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    height: 80px; /* Set a fixed height */
+    border-top: 1px solid white; /* Top border with white color */
+  }
+  
+  /* Styling for elements with class 'hour' */
+  .hour {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Text color */
+    border-top: 1px dashed #000000; /* Dashed top border with black color */
+  }
+  
+  /* Styling for elements with class 'past' */
+  .past {
+    background-color: #d3d3d3; /* Gray background */
+    color: rgb(65, 0, 0); /* Text color */
+  }
+  
+  /* Styling for elements with class 'present' */
+  .present {
+    background-color: #ff6961; /* Red background */
+    color: rgb(65, 0, 0); /* Text color */
+  }
+  
+  /* Styling for elements with class 'future' */
+  .future {
+    background-color: #77dd77; /* Green background */
+    color: rgb(65, 1, 1); /* Text color */
+  }
+  
+  /* Styling for elements with class 'saveBtn' */
+  .saveBtn {
+    border-left: 1px solid black; /* Left border with black color */
+    border-top-right-radius: 15px; /* Top-right border radius */
+    border-bottom-right-radius: 15px; /* Bottom-right border radius */
+    background-color: #bd06d5; /* Blue background color */
+    color: white; /* Text color */
+  }
+  
+  /* Styling for the hover effect of 'saveBtn' */
+  .saveBtn i:hover {
+    font-size: 20px; /* Increase font size on hover */
+    transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
