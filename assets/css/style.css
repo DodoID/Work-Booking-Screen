@@ -34,3 +34,17 @@ body {
     text-decoration-color: #3b0542;
   }
   
+  /* Styling for the header section */
+header {
+    text-align: center; /* Center-align text */
+    background-color: transparent; /* Transparent background */
+    color: black; /* Text color */
+    border-radius: 0; /* Border radius */
+    border-bottom: 10px solid black; /* Thick black border at the bottom */
+    padding: 60px; /* Padding around header content */
+  }
+  
+  /* Styling for elements with class 'description' */
+  .description {
+    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+  }
