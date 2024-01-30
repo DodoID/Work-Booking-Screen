@@ -66,3 +66,23 @@ $(document).ready(function() {
         const taskTime = parseInt(textarea.attr("data-index"));
         const taskText = textarea.val().trim();
     
+        if (taskText !== "") {
+            // Retrieve existing user tasks or initialize an empty array
+            const tasksList = JSON.parse(localStorage.getItem("userTasks")) || [];
+            
+            // Find the index of the task with the same time and remove it if it exists
+            const taskIndex = tasksList.findIndex(task => task.taskTime === taskTime);
+            if (taskIndex !== -1) tasksList.splice(taskIndex, 1);
+      
+            // Add the new task to the list and sort tasks by time
+            tasksList.push({ taskTime, taskText });
+            tasksList.sort((a, b) => a.taskTime - b.taskTime);
+      
+            // Store the updated task list in local storage
+            localStorage.setItem("userTasks", JSON.stringify(tasksList));
+          } else {
+            alert("This task is empty, please enter a task and try again!");
+          }
+        });
+      });
+      
