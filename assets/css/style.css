@@ -5,25 +5,25 @@ body {
     line-height: 1;
   }
   
-  /* Style for text areas */
+  /* Style for text areas and text inputs */
   textarea {
-    background: transparent; /* Make the background transparent */
-    border: none; /* Remove border */
-    resize: none; /* Disable text area resizing */
-    color: #000000; /* Text color */
-    border-left: 1px solid black; /* Add a left border */
-    padding: 10px; /* Padding around text */
+    background: transparent; 
+    border: none; 
+    resize: none; 
+    color: #000000; 
+    border-left: 1px solid black; 
+    padding: 10px; 
     
   }
   
   .container {
-    background-color: #f5f5f5; /* Light gray background color */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding around the content */
-    margin-top: 20px; /* Add some space at the top */
-    margin-bottom: 20px; /* Add some space at the bottom */
-    border: #bd06d5 2px solid; /* Add a border */
+    background-color: #f5f5f5; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    border: #bd06d5 2px solid; 
   }
   
   .display-3{
@@ -36,69 +36,69 @@ body {
   
   /* Styling for the header section */
 header {
-    text-align: center; /* Center-align text */
-    background-color: transparent; /* Transparent background */
-    color: black; /* Text color */
-    border-radius: 0; /* Border radius */
-    border-bottom: 10px solid black; /* Thick black border at the bottom */
-    padding: 60px; /* Padding around header content */
+    text-align: center; 
+    background-color: transparent; 
+    color: black; 
+    border-radius: 0; 
+    border-bottom: 10px solid black; 
+    padding: 60px; 
   }
   
   /* Styling for elements with class 'description' */
   .description {
-    white-space: pre-wrap; /* Preserve line breaks and wrap text */
+    white-space: pre-wrap; 
   }
 
-  /* Styling for elements with class 'time-block' */
+  /* Styling for elements with class 'time-block' and 'future' */
 .time-block {
-    text-align: center; /* Center-align text */
-    border-radius: 15px; /* Rounded corners */
+    text-align: center; 
+    border-radius: 15px; 
   }
   
-  /* Styling for elements with class 'row' */
+  /* Styling for elements with class 'row' and 'hour' */
   .row {
-    white-space: pre-wrap; /* Preserve line breaks and wrap text */
-    height: 80px; /* Set a fixed height */
-    border-top: 1px solid white; /* Top border with white color */
+    white-space: pre-wrap; 
+    height: 80px; 
+    border-top: 1px solid white; 
   }
   
   /* Styling for elements with class 'hour' */
   .hour {
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Text color */
-    border-top: 1px dashed #000000; /* Dashed top border with black color */
+    background-color: #ffffff; 
+    color: #000000; 
+    border-top: 1px dashed #000000; 
   }
   
   /* Styling for elements with class 'past' */
   .past {
-    background-color: #d3d3d3; /* Gray background */
-    color: rgb(65, 0, 0); /* Text color */
+    background-color: #d3d3d3; 
+    color: rgb(65, 0, 0); 
   }
   
   /* Styling for elements with class 'present' */
   .present {
-    background-color: #ff6961; /* Red background */
-    color: rgb(65, 0, 0); /* Text color */
+    background-color: #ff6961; 
+    color: rgb(65, 0, 0); 
   }
   
   /* Styling for elements with class 'future' */
   .future {
-    background-color: #77dd77; /* Green background */
-    color: rgb(65, 1, 1); /* Text color */
+    background-color: #77dd77; 
+    color: rgb(65, 1, 1); 
   }
   
   /* Styling for elements with class 'saveBtn' */
   .saveBtn {
-    border-left: 1px solid black; /* Left border with black color */
-    border-top-right-radius: 15px; /* Top-right border radius */
-    border-bottom-right-radius: 15px; /* Bottom-right border radius */
-    background-color: #bd06d5; /* Blue background color */
-    color: white; /* Text color */
+    border-left: 1px solid black; 
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+    background-color: #bd06d5; 
+    color: white; 
   }
   
   /* Styling for the hover effect of 'saveBtn' */
   .saveBtn i:hover {
-    font-size: 20px; /* Increase font size on hover */
-    transition: all 0.3s ease-in-out; /* Add a smooth transition effect */
+    font-size: 20px; 
+    transition: all 0.3s ease-in-out; 
   }
   

@@ -29,7 +29,9 @@ $(document).ready(function() {
         const userTask = $("<textarea>")
           .addClass("description col")
           .attr("data-index", index + 9)
-          .text(tasksList[index]?.taskText || ""); // Populate with existing task text
+
+          // Populate with existing task text
+          .text(tasksList[index]?.taskText || ""); 
         const saveTask = $("<button><i>")
           .addClass("saveBtn col-1 fas fa-save fa-2x")
           .css("color", "#ffffff");
@@ -78,9 +80,10 @@ $(document).ready(function() {
             tasksList.push({ taskTime, taskText });
             tasksList.sort((a, b) => a.taskTime - b.taskTime);
       
-            // Store the updated task list in local storage
+            // Store the updated task list in local storage 
             localStorage.setItem("userTasks", JSON.stringify(tasksList));
           } else {
+            // If the task is empty, display an alert
             alert("This task is empty, please enter a task and try again!");
           }
         });
